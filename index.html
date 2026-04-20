@@ -4,85 +4,159 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KIKILABS — Digital Systems & Content</title>
+  <meta name="description" content="KIKILABS builds digital systems, dashboards, automation and content solutions for real businesses." />
+  <link rel="icon" type="image/png" href="assets/Back_Logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- ===== SOUND BUTTON ===== -->
+  <button class="sound-btn" id="soundBtn" aria-label="Play kiki sound">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+    KIKI
+  </button>
+
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
-      <!-- Logo SVG -->
-      <a href="#" class="logo" aria-label="KIKILABS Home">
-        <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <text x="0" y="22" font-family="Inter, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" letter-spacing="-0.5">KIKI</text>
-          <text x="52" y="22" font-family="Inter, sans-serif" font-weight="800" font-size="20" fill="#E11D48" letter-spacing="-0.5">LABS</text>
-        </svg>
+
+      <!-- LOGO — uses actual image file -->
+      <a href="#" class="logo" aria-label="KIKILABS">
+        <img src="assets/Main__SVG_.svg" alt="KIKILABS" height="36"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="logo-fallback" style="display:none">KIKI<em>LABS</em></span>
       </a>
 
-      <!-- Hamburger (mobile) -->
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <!-- Nav links -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#hero"     class="nav-link">Home</a></li>
         <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#work" class="nav-link">Work</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#work"     class="nav-link">Work</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
+    <div class="monkey-bg" aria-hidden="true">
+      <!-- monkey-9 (banana monkey) is brand face — largest, most prominent -->
+      <img src="assets/monkey-9.png"  class="mk mk-h-brand chrome" alt="" />
+      <img src="assets/monkey-1.png"  class="mk mk-h1 chrome" alt="" />
+      <img src="assets/monkey-4.png"  class="mk mk-h2 dark"   alt="" />
+    </div>
+
     <div class="container hero-inner">
-      <div class="hero-label fade-in">Digital Studio</div>
+      <p class="hero-eyebrow fade-in">— Digital Studio · By Metika India</p>
+
+      <!-- FIXED: headline now left-aligned, properly structured -->
       <h1 class="hero-headline fade-in delay-1">
-        Digital Systems &amp; Content That Actually Move Your Business Forward
+        Digital Systems<br/>
+        <span class="hl-amp">&amp;</span> Content<br/>
+        That <em>Actually</em><br/>
+        Move Your<br/>
+        Business Forward
       </h1>
+
       <p class="hero-sub fade-in delay-2">
-        KIKILABS builds simple, effective solutions — from social media content to dashboards and automation.
+        From dashboards and automation to content and magazines —
+        KIKILABS builds what your business actually needs.
       </p>
+
       <div class="hero-buttons fade-in delay-3">
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-        <a href="#services" class="btn btn-secondary">View Services</a>
+        <a href="#contact"  class="btn btn-primary">Get in Touch</a>
+        <a href="#services" class="btn btn-ghost">View Services</a>
       </div>
+    </div>
+
+    <div class="hero-scroll-hint fade-in delay-4" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
     </div>
   </section>
 
-  <!-- ===== WHAT WE DO ===== -->
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Dashboards</span><span class="dot">✦</span>
+      <span>Automation</span><span class="dot">✦</span>
+      <span>Data Analysis</span><span class="dot">✦</span>
+      <span>Web Solutions</span><span class="dot">✦</span>
+      <span>Visualizations</span><span class="dot">✦</span>
+      <span>Reels &amp; Content</span><span class="dot">✦</span>
+      <span>Digital Magazines</span><span class="dot">✦</span>
+      <span>Social Media</span><span class="dot">✦</span>
+      <span>Dashboards</span><span class="dot">✦</span>
+      <span>Automation</span><span class="dot">✦</span>
+      <span>Data Analysis</span><span class="dot">✦</span>
+      <span>Web Solutions</span><span class="dot">✦</span>
+      <span>Visualizations</span><span class="dot">✦</span>
+      <span>Reels &amp; Content</span><span class="dot">✦</span>
+      <span>Digital Magazines</span><span class="dot">✦</span>
+      <span>Social Media</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== WHAT WE DO — TWO DIVISIONS ===== -->
+  <!-- TECH FIRST, CONTENT SECOND -->
   <section class="section what-we-do" id="what-we-do">
+    <div class="monkey-bg" aria-hidden="true">
+      <img src="assets/monkey-9.png" class="mk mk-w-brand chrome" alt="" />
+      <img src="assets/monkey-6.png" class="mk mk-w2 dark"   alt="" />
+    </div>
+
     <div class="container">
-      <h2 class="section-title fade-in">Two Focused Divisions</h2>
+      <div class="section-label fade-in">What We Do</div>
+      <h2 class="section-title fade-in">Two Focused<br/>Divisions</h2>
 
       <div class="divisions-grid">
-        <!-- Creative -->
+
+        <!-- DIVISION 1: TECH (first) -->
         <div class="division-card fade-in">
-          <div class="division-icon">🎬</div>
-          <h3 class="division-name">Creative Services</h3>
-          <p class="division-desc">We create content that captures attention and builds brand presence.</p>
-          <ul class="division-list">
+          <div class="division-header">
+            <span class="division-num">01</span>
+            <!-- White SVG icon: circuit/data -->
+            <svg class="div-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              <path d="M7 8h.01M12 8h.01M17 8h.01M7 12h10"/>
+            </svg>
+          </div>
+          <h3>Tech &amp; Data Services</h3>
+          <p>We build systems that simplify operations, automate repetitive work, and sharpen decision-making at every level.</p>
+          <ul>
+            <li>Websites &amp; Web Solutions</li>
+            <li>Custom Dashboards &amp; Reports</li>
+            <li>Data Visualizations</li>
+            <li>Automation Systems</li>
+            <li>Data Analysis &amp; Insights</li>
+          </ul>
+        </div>
+
+        <!-- DIVISION 2: CONTENT (second) -->
+        <div class="division-card fade-in delay-1">
+          <div class="division-header">
+            <span class="division-num">02</span>
+            <!-- White SVG icon: film/content -->
+            <svg class="div-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="2.18"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+            </svg>
+          </div>
+          <h3>Creative &amp; Content</h3>
+          <p>We create content that captures attention, builds brand presence, and drives engagement across every platform.</p>
+          <ul>
             <li>Reels &amp; Short-form Video</li>
             <li>Social Media Content</li>
             <li>Custom Digital Magazines</li>
+            <li>Brand Content Strategy</li>
           </ul>
         </div>
 
-        <!-- Tech -->
-        <div class="division-card fade-in delay-1">
-          <div class="division-icon">📊</div>
-          <h3 class="division-name">Tech &amp; Data Services</h3>
-          <p class="division-desc">We build systems that simplify operations and improve decision-making.</p>
-          <ul class="division-list">
-            <li>Dashboards &amp; Reports</li>
-            <li>Automation Systems</li>
-            <li>Data Analysis</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
@@ -90,55 +164,117 @@
   <!-- ===== SERVICES ===== -->
   <section class="section services" id="services">
     <div class="container">
+      <div class="section-label fade-in">What We Offer</div>
       <h2 class="section-title fade-in">Services</h2>
-      <p class="section-intro fade-in">Practical solutions built for real business use.</p>
+      <p class="section-sub fade-in">Practical solutions built for real business use.</p>
 
       <ul class="services-list">
         <li class="service-item fade-in">
-          <span class="service-dot"></span>
-          Social Media Content Creation
+          <span class="svc-num">01</span>
+          <span class="svc-name">Websites &amp; Web Solutions</span>
+          <span class="svc-tag">Tech</span>
+          <span class="svc-arr">↗</span>
         </li>
         <li class="service-item fade-in delay-1">
-          <span class="service-dot"></span>
-          Video Editing (Reels)
+          <span class="svc-num">02</span>
+          <span class="svc-name">Custom Dashboards &amp; Reports</span>
+          <span class="svc-tag">Tech</span>
+          <span class="svc-arr">↗</span>
         </li>
         <li class="service-item fade-in delay-2">
-          <span class="service-dot"></span>
-          Custom Dashboards
+          <span class="svc-num">03</span>
+          <span class="svc-name">Excel / Workflow Automation</span>
+          <span class="svc-tag">Tech</span>
+          <span class="svc-arr">↗</span>
         </li>
         <li class="service-item fade-in delay-3">
-          <span class="service-dot"></span>
-          Excel / Workflow Automation
+          <span class="svc-num">04</span>
+          <span class="svc-name">Data Visualizations &amp; Analysis</span>
+          <span class="svc-tag">Tech</span>
+          <span class="svc-arr">↗</span>
         </li>
         <li class="service-item fade-in delay-4">
-          <span class="service-dot"></span>
-          Business Reporting
+          <span class="svc-num">05</span>
+          <span class="svc-name">Social Media Content Creation</span>
+          <span class="svc-tag accent-tag">Content</span>
+          <span class="svc-arr">↗</span>
+        </li>
+        <li class="service-item fade-in delay-5">
+          <span class="svc-num">06</span>
+          <span class="svc-name">Reels &amp; Short-form Video</span>
+          <span class="svc-tag accent-tag">Content</span>
+          <span class="svc-arr">↗</span>
+        </li>
+        <li class="service-item fade-in delay-5">
+          <span class="svc-num">07</span>
+          <span class="svc-name">Custom Digital Magazines</span>
+          <span class="svc-tag accent-tag">Content</span>
+          <span class="svc-arr">↗</span>
         </li>
       </ul>
     </div>
   </section>
 
+  <!-- ===== STATS / NUMBERS ===== -->
+  <section class="stats-section" id="stats">
+    <div class="monkey-bg" aria-hidden="true">
+      <img src="assets/monkey-9.png" class="mk mk-stats chrome" alt="" />
+    </div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="20">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item fade-in delay-1">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item fade-in delay-2">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-plus"></span>
+          <span class="stat-label">Core Divisions</span>
+        </div>
+        <div class="stat-item fade-in delay-3">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-plus">%</span>
+          <span class="stat-label">Direct Communication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== WHY KIKILABS ===== -->
   <section class="section why" id="why">
+    <div class="monkey-bg" aria-hidden="true">
+      <img src="assets/monkey-5.png" class="mk mk-y1 chrome" alt="" />
+      <img src="assets/monkey-8.png" class="mk mk-y2 dark"   alt="" />
+    </div>
     <div class="container">
+      <div class="section-label fade-in">Why Us</div>
       <h2 class="section-title fade-in">Why KIKILABS</h2>
-
       <div class="why-grid">
         <div class="why-card fade-in">
-          <span class="why-number">01</span>
-          <p>Clear and simple solutions</p>
+          <span class="why-num">01</span>
+          <h4>Clear &amp; Simple Solutions</h4>
+          <p>No jargon. No bloat. Just results that make sense for your business.</p>
         </div>
         <div class="why-card fade-in delay-1">
-          <span class="why-number">02</span>
-          <p>Fast execution</p>
+          <span class="why-num">02</span>
+          <h4>Fast Execution</h4>
+          <p>We move quickly without cutting corners. Time is your most valuable asset.</p>
         </div>
         <div class="why-card fade-in delay-2">
-          <span class="why-number">03</span>
-          <p>Built for actual business use</p>
+          <span class="why-num">03</span>
+          <h4>Built for Business</h4>
+          <p>Every solution is made for actual use — not demos or presentations.</p>
         </div>
         <div class="why-card fade-in delay-3">
-          <span class="why-number">04</span>
-          <p>Direct communication</p>
+          <span class="why-num">04</span>
+          <h4>Direct Communication</h4>
+          <p>You talk to the people building it. No account managers. No middlemen.</p>
         </div>
       </div>
     </div>
@@ -147,84 +283,112 @@
   <!-- ===== WORK ===== -->
   <section class="section work" id="work">
     <div class="container">
+      <div class="section-label fade-in">Portfolio</div>
       <h2 class="section-title fade-in">Work</h2>
-      <div class="work-placeholder fade-in">
-        <p>We're currently working with early clients and building case studies.</p>
-        <p>Samples and demo work available on request.</p>
-        <a href="#contact" class="btn btn-primary" style="margin-top:2rem;">Request Samples</a>
+      <div class="work-card fade-in">
+        <!-- monkey-9 brand face inside work card -->
+        <img src="assets/monkey-9.png" class="work-monkey chrome" alt="" aria-hidden="true" />
+        <div class="work-content">
+          <p>We're currently working with early clients and building case studies.</p>
+          <p>Samples and demo work available on request.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem;display:inline-block">Request Samples</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
   <section class="section contact" id="contact">
+    <div class="monkey-bg" aria-hidden="true">
+      <img src="assets/monkey-9.png"  class="mk mk-c-brand chrome" alt="" />
+      <img src="assets/monkey-10.png" class="mk mk-c2 dark"   alt="" />
+    </div>
     <div class="container">
-      <h2 class="section-title fade-in">Let's Work Together</h2>
-      <p class="section-intro fade-in">Have a project or idea? Reach out and we'll keep it simple.</p>
+      <div class="section-label fade-in">Reach Out</div>
+      <h2 class="section-title fade-in">Let's Work<br/>Together</h2>
+      <p class="section-sub fade-in">Have a project or idea? Reach out and we'll keep it simple.</p>
 
-      <div class="contact-details fade-in">
-        <a href="mailto:your@email.com" class="contact-item">
-          <span class="contact-icon">
-            <!-- Email icon -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      <div class="contact-list">
+        <a href="mailto:kikilabs.in@gmail.com" class="contact-row fade-in">
+          <span class="cr-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </span>
-          your@email.com
+          <div class="cr-text">
+            <span class="cr-label">Email</span>
+            <span class="cr-val">kikilabs.in@gmail.com</span>
+          </div>
+          <span class="cr-arr">↗</span>
         </a>
-        <a href="https://wa.me/yournumber" target="_blank" rel="noopener" class="contact-item">
-          <span class="contact-icon">
-            <!-- WhatsApp icon -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <a href="https://wa.me/917889100941" target="_blank" rel="noopener" class="contact-row fade-in delay-1">
+          <span class="cr-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
           </span>
-          your number
+          <div class="cr-text">
+            <span class="cr-label">WhatsApp</span>
+            <span class="cr-val">+91 78891 00941</span>
+          </div>
+          <span class="cr-arr">↗</span>
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="contact-item">
-          <span class="contact-icon">
-            <!-- LinkedIn icon -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a href="https://www.linkedin.com/in/jaskirat-link" target="_blank" rel="noopener" class="contact-row fade-in delay-2">
+          <span class="cr-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </span>
-          your LinkedIn profile
+          <div class="cr-text">
+            <span class="cr-label">LinkedIn</span>
+            <span class="cr-val">jaskirat-link</span>
+          </div>
+          <span class="cr-arr">↗</span>
+        </a>
+        <a href="https://instagram.com/kikilabs.in" target="_blank" rel="noopener" class="contact-row fade-in delay-3">
+          <span class="cr-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </span>
+          <div class="cr-text">
+            <span class="cr-label">Instagram</span>
+            <span class="cr-val">@kikilabs.in</span>
+          </div>
+          <span class="cr-arr">↗</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="footer">
+  <footer class="footer">
+    <div class="monkey-bg" aria-hidden="true">
+      <img src="assets/monkey-2.png" class="mk mk-f1 dark" alt="" />
+    </div>
     <div class="container footer-inner">
-      <!-- Logo -->
-      <a href="#" class="logo footer-logo" aria-label="KIKILABS">
-        <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <text x="0" y="22" font-family="Inter, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" letter-spacing="-0.5">KIKI</text>
-          <text x="52" y="22" font-family="Inter, sans-serif" font-weight="800" font-size="20" fill="#E11D48" letter-spacing="-0.5">LABS</text>
-        </svg>
-      </a>
-
-      <!-- Quick links -->
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <img src="assets/Main__SVG_.svg" alt="KIKILABS" height="30"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span class="logo-fallback" style="display:none">KIKI<em>LABS</em></span>
+        </a>
+        <p>Digital Systems &amp; Content<br/>By Metika India</p>
+      </div>
       <ul class="footer-links">
         <li><a href="#hero">Home</a></li>
+        <li><a href="#what-we-do">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <!-- Social icons -->
       <div class="footer-socials">
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram" class="social-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a href="https://instagram.com/kikilabs.in" target="_blank" rel="noopener" aria-label="Instagram" class="soc">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <!-- LinkedIn -->
-        <a href="#" aria-label="LinkedIn" class="social-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a href="https://www.linkedin.com/in/jaskirat-link" target="_blank" rel="noopener" aria-label="LinkedIn" class="soc">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <!-- WhatsApp -->
-        <a href="#" aria-label="WhatsApp" class="social-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <a href="https://wa.me/917889100941" target="_blank" rel="noopener" aria-label="WhatsApp" class="soc">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
         </a>
       </div>
-
-      <!-- Copyright -->
-      <p class="footer-copy">© 2026 KIKILABS. Built with clarity.</p>
+      <div class="footer-bottom">
+        <span>© 2026 KIKILABS. Built with clarity.</span>
+        <span>By Metika India</span>
+      </div>
     </div>
   </footer>
 
